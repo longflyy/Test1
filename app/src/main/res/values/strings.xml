@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">concept demo</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_search_your_ass">美食與吃貨</string>
+    <string name="title_activity_friend_list">我的吃貨好友</string>
+    <string name="title_activity_chat_room">ChatRoom</string>
+    <string name="title_activity_log_in">LogIn</string>
+    <string name="facebook_app_id">147260115616822</string>
+
+
+</resources>
