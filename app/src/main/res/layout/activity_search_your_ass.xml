@@ -25,6 +25,13 @@
             android:layout_weight="1"
             android:text="人氣吃貨"
             android:id="@+id/btnPopHuman" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="搜尋地標"
+            android:id="@+id/btnPlace"
+            android:layout_weight="1" />
     </LinearLayout>
 
     <LinearLayout

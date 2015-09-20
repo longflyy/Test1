@@ -54,12 +54,12 @@ public class ChatRoom extends ActionBarActivity {
                 editor.putString("input", text);
                 editor.commit();
 
-                    if (keyCode == KeyEvent.KEYCODE_ENTER){
-                        if (event.getAction()==KeyEvent.ACTION_DOWN){
-                            send();
-                        }
-                        return true;
+                if (keyCode == KeyEvent.KEYCODE_ENTER){
+                    if (event.getAction()==KeyEvent.ACTION_DOWN){
+                        send();
                     }
+                    return true;
+                }
 
                 return false;
             }

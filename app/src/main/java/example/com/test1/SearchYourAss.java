@@ -1,5 +1,6 @@
 package example.com.test1;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -12,7 +13,7 @@ import android.widget.ImageView;
 public class SearchYourAss extends ActionBarActivity {
 
     ImageView mImageView;
-    Button mBtnPopFood, mBtnPopHuman;
+    Button mBtnPopFood, mBtnPopHuman, mBtnPlace;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +22,7 @@ public class SearchYourAss extends ActionBarActivity {
 
         mBtnPopFood = (Button) findViewById(R.id.btnPopFood);
         mBtnPopHuman = (Button) findViewById(R.id.btnPopHuman);
+        mBtnPlace = (Button) findViewById(R.id.btnPlace);
 
         mBtnPopFood.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,8 +38,21 @@ public class SearchYourAss extends ActionBarActivity {
             }
         });
 
+        mBtnPlace.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                goToMap();
+            }
+        });
+
         mImageView = (ImageView) findViewById(R.id.imageView);
 
+    }
+
+    private void goToMap(){
+        Intent intent = new Intent();
+        intent.setClass(this, MapsActivity.class);
+        startActivity(intent);
     }
 
     private void searchFood(){

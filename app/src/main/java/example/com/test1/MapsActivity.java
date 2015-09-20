@@ -33,6 +33,7 @@ public class MapsActivity extends FragmentActivity {
         mTxtAddress = (EditText) findViewById(R.id.txtAddress);
         mBtnSearch = (Button) findViewById(R.id.btnSearch);
         mBtnType = (Button) findViewById(R.id.btnType);
+
     }
 
 
@@ -42,6 +43,8 @@ public class MapsActivity extends FragmentActivity {
         super.onResume();
         setUpMapIfNeeded();
     }
+
+
 
     public void onSearch(View view){
         String location = mTxtAddress.getText().toString();
